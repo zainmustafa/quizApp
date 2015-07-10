@@ -1,0 +1,169 @@
+body{
+    font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+
+}
+.radioValue {
+    margin-left: 5px;
+    color: #0f9d58;
+    font-weight: bold;
+    padding: 5px;
+    border: none !important;
+}
+.heading{
+    color: #448aff;
+    text-align: center;
+}
+.mainBox {
+    padding-top: 30px;
+}
+.score {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.md-raised {
+    margin-left: 25%;
+}
+.md-whiteframe-z4{
+    margin: 50px 0px 50px 0;
+    padding: 10px;
+    background-color: rgb(16,108,200);
+    color: rgba(255,255,255,0.87);
+}
+
+.md-display-1{
+    font-weight: lighter;
+}
+
+
+.md-toolbar-tools {
+    box-shadow: 0px 14px 15px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+md-tab md-tabs-ink-bar{
+    margin-left: 100px;
+}
+
+
+
+
+.section {
+
+    background: #00bcd4;
+    color: #000;
+    border-radius: 3px;
+    text-align: center;
+    margin: 1em;
+    position: relative !important;
+    padding-bottom: 10px;
+    margin-top: 100px;
+
+}
+
+.quizApp {
+    padding: 30px;
+}
+
+.radioButtondemoBasicUsage hr {
+    margin-left: -20px;
+    opacity: 0.3; }
+.radioButtondemoBasicUsage md-radio-group {
+    width: 150px; }
+.radioButtondemoBasicUsage p:last-child {
+    padding-bottom: 50px; }
+.radioButtondemoBasicUsage [ng-controller] {
+    padding-left: 20px; }
+.radioButtondemoBasicUsage .radioValue {
+    margin-left: 5px;
+    color: #0f9d58;
+    font-weight: bold;
+    padding: 5px; }
+
+
+/*
+About Page*/
+body{
+    font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+
+}
+.radioValue {
+    margin-left: 5px;
+    color: #0f9d58;
+    font-weight: bold;
+    padding: 5px;
+    border: none !important;
+}
+.heading{
+    color: #448aff;
+    text-align: center;
+}
+.mainBox {
+    padding-top: 30px;
+}
+.score {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.md-raised {
+    margin-left: 25%;
+}
+.md-whiteframe-z4{
+    margin: 50px 0px 50px 0;
+    padding: 10px;
+    background-color: rgb(16,108,200);
+    color: rgba(255,255,255,0.87);
+}
+
+.md-display-1{
+    font-weight: lighter;
+}
+
+
+.md-toolbar-tools {
+    box-shadow: 0px 14px 15px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+md-tab md-tabs-ink-bar{
+    margin-left: 100px;
+}
+
+
+.md-avatar {
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.section {
+
+    background: #00bcd4;
+    color: #000;
+    border-radius: 3px;
+    text-align: center;
+    margin: 1em;
+    position: relative !important;
+    padding-bottom: 10px;
+    margin-top: 100px;
+
+}
+
+.quizApp {
+    padding: 30px;
+}
+
+.radioButtondemoBasicUsage hr {
+    margin-left: -20px;
+    opacity: 0.3; }
+.radioButtondemoBasicUsage md-radio-group {
+    width: 150px; }
+.radioButtondemoBasicUsage p:last-child {
+    padding-bottom: 50px; }
+.radioButtondemoBasicUsage [ng-controller] {
+    padding-left: 20px; }
+.radioButtondemoBasicUsage .radioValue {
+    margin-left: 5px;
+    color: #0f9d58;
+    font-weight: bold;
+    padding: 5px; }

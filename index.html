@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html ng-app="radioDemo1">
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <title>SWIT Quiz App</title>
+    <link rel="shortcut icon" href="icon.ico" />
+
+    <link rel="stylesheet" href="./bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./bower_components/angular/angular.js"></script>
+    <script src="./bower_components/angular-material/angular-material.js"></script>
+    <script src="./bower_components/angular-aria/angular-aria.js"></script>
+    <script src="./bower_components/angular-animate/angular-animate.js"></script>
+    <!-- Firebase -->
+    <script src="./bower_components/firebase/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="./bower_components/angularfire/dist/angularfire.min.js"></script>
+    <script src="angular.js"></script>
+
+</head>
+<body ng-controller="AppCtrl">
+
+
+            <div class="mainBox" layout="row" >
+                <div flex="5" >
+
+                </div>
+                <div flex="90">
+                    <md-toolbar layout="column">
+                        <div class="md-toolbar-tools" style="  background-color: #00BBD4;  height: 80px;">
+                            <div layout="row" style="width: 100%;">
+
+                                <div flex="15">
+                                    <h4 class="md-display-1"> Quiz <span class="heading">App</span> </h4>
+                                </div>
+                                <div flex="60"></div>
+                                <div flex="15">
+                                    <p>Zain Mustafa</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </md-toolbar>
+                    <md-tabs md-stretch-tabs="always" md-center-tabs="false" style="background-color: #FDFDFE; margin-top:30px">
+                        <md-tab label="Quiz App" >
+                            <md-tab-body>
+                                <div class="quizApp">
+
+                                    <form ng-submit="submit()" ng-controller="AppCtrl">
+
+                                        <!--<section class="section" layout="row" layout-sm="column" layout-align="center center">
+                                            <h1 class="md-display-1">{{ques.messageName}}</h1>
+                                        </section>-->
+                                        <md-whiteframe class="md-whiteframe-z4" layout layout-align="center center" class="whiteFrame">
+                                            <div layout="row" style="width: 100%;">
+                                                <div flex="15">
+                                                    <p style="font-size: 20px" ng-hide="showQuestion">Question {{questionNo}}/4</p>
+                                                </div>
+                                                <div flex="75" style="text-align: center">
+                                                    <h1 class="md-display-1">{{ques.messageName}}</h1>
+                                                </div>
+
+                                            </div>
+                                        </md-whiteframe>
+                                        <h1 class="score">{{score}}</h1>
+                                        <div layout="row">
+                                            <div flex="40"></div>
+                                            <div flex="15">
+                            <!--Radio Buttons-->
+                                                <div class="radioButtons" layout="row">
+                                                    <md-radio-group ng-hide="myRadio" ng-model="data" class="md-primary" layout="column"  layout="column">
+                                                        <md-radio-button ng-repeat="d in radioData"
+                                                                         ng-value="d.value">
+                                                            {{ d.label }}
+                                                        </md-radio-button>
+                                                    </md-radio-group>
+                                                </div>
+                            <!--CheckBoxes-->
+                                                <div ng-hide="myCheck" ng-repeat="checked in radioData" layout="column">
+                                                    <md-checkbox  ng-click="toggle(checked.value, selected)" ng-value="checked.value">
+                                                        {{ checked.label }}
+                                                    </md-checkbox>
+                                                </div>
+                            <!--True False-->
+                                                <div ng-hide="myTrueFalse" layout="column">
+                                                    <md-button ng-repeat="q in radioData" ng-click="checkSubmit(q.value);"> {{q.label}} </md-button >
+                                                </div>
+                                                <p>
+                                                    <md-button ng-hide="myButton"  class="md-raised" ng-click="nextItem()" type="button" >{{nextValue}}</md-button>
+                                                </p>
+                                            </div>
+                                            <div flex="45"></div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </md-tab-body>
+                        </md-tab>
+                        <md-tab label="About">
+                            <md-tab-body>
+                                <div layout="column" style="height: 550px;">
+                                    <div flex="30" style="background-color: #F0F0F0;"></div>
+                                    <div flex="20">
+                                        <div layout="row"  style="background-color: #F0F0F0; height: 550px" >
+                                            <div flex="30" >
+                                                <img src="./images/me.png" class="md-avatar" alt="Zain Mustafa" />
+                                            </div>
+                                            <div flex="40" >
+                                                <div style="padding-top: 30px">
+                                                    <p style="line-height: 0.5">Zain Mustafa</p>
+                                                    <p style="line-height: 0.5">Karachi</p>
+                                                    <p style="line-height: 0.5">zmdhillo@gmail.com</p>
+                                                </div>
+                                            </div>
+                                            <div flex="30" ></div>
+                                        </div>
+                                    </div>
+                                    <div flex="50">
+                                        <div style="margin-top: 70px; margin-left: 300px">
+                                            <a href="www.facebook.com/zmdhillo"><img src="./images/fb.png" style="height: 50px; width: 50px"></a>
+                                            <a href="www.twitter.com/zmdhillo"><img src="./images/twitter.png" style="height: 50px; width: 50px"></a>
+                                            <a href="www.linkedin.com/in/zmdhillo"><img src="./images/linkedIn.png" style="height: 50px; width: 50px"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </md-tab-body>
+                        </md-tab>
+
+                    </md-tabs>
+                </div>
+                <div flex="5"></div>
+            </div>
+
+</body>
+</html>
